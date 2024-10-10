@@ -96,7 +96,7 @@ int main() {
     };
     vector<query> u(q + 1);
     for (int i = 1; i <= q; ++i) {
-        fin >> u[i].x >> u[i].y;
+        fin >> u[i].x >> u[i].y >> u[i].p;
         u[i].ind = i;
     }
 
@@ -120,7 +120,7 @@ int main() {
         while (l > u[i].x)
             s.insert(v[--l].norm);
         
-        ans[u[i].ind] = orig[s.query((u[i].y - u[i].x + 2) / 2)];
+        ans[u[i].ind] = orig[s.query(u[i].p - u[i].x + 1)];
     }
     for (int i = 1; i <= q; ++i)
         fout << ans[i] << "\n";
