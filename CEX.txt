@@ -1,0 +1,10 @@
+Probleme: easyxy, meadian_query, MKTHNUM (SPOJ)
+Merge Sort Tree:
+O(q log^2(n) log(V))
+O(q log^3(n)) : coordinate compression
+O(q log^2(n)) : smart binary search
+Mo's Algorithm:
+O(q sqrt(n) log(n)) : Fenwick tree
+O((q+n) sqrt(n)) : sqrt data structure
+Persistent Segment Tree:
+O((q+n) log(n)) : smart binary search
